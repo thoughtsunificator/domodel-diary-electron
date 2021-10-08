@@ -1,7 +1,7 @@
 {
 	"name": "domodel-diary-electron",
 	"description": "Electron context for domodel-diary",
-	"version": "1.0.11",
+	"version": "1.0.12",
 	"main": "src/main/main.js",
 	"scripts": {
 		"start": "concurrently \"rollup --config rollup.config.dev.js\" \"electron .\"",
