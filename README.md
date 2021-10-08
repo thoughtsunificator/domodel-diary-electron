@@ -1,5 +1,5 @@
 <div align="left">
-	<img src="https://www.electronjs.org/app-img/domodel-diary/domodel-diary-icon-128.png">
+	![](public/renderer/icon.png)
 </div>
 
 # domodel-diary-electron
