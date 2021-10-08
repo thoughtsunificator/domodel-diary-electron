@@ -24,16 +24,33 @@ function createWindow() {
 
 }
 
-app.on("ready", createWindow)
+const gotTheLock = app.requestSingleInstanceLock()
 
-app.on("window-all-closed", function () {
-	if (process.platform !== "darwin") {
-		app.quit()
-	}
-})
+if (!gotTheLock) {
+	app.quit()
+} else {
+	app.on('second-instance', (event, commandLine, workingDirectory) => {
+		// Someone tried to run a second instance, we should focus our window.
+		if (browserWindow) {
+			if (browserWindow.isMinimized()) browserWindow.restore()
+			browserWindow.focus()
+		}
+	})
 
-app.on("activate", function () {
-	if (browserWindow === null) {
-		createWindow()
-	}
-})
+	app.on("ready", createWindow)
+
+	app.on("window-all-closed", function () {
+		if (process.platform !== "darwin") {
+			app.quit()
+		}
+	})
+
+	app.on("activate", function () {
+		if (browserWindow === null) {
+			createWindow()
+		}
+	})
+
+}
+
+
