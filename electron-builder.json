@@ -1,0 +1,32 @@
+{
+	"directories": {
+		"buildResources": "public/main",
+		"output": "dist/main"
+	},
+	"files": [
+		"src/main",
+		"dist/renderer"
+	],
+	"appId": "thoughtsunificator.domodeldiary",
+	"productName": "domodel-diary",
+	"appx": {
+		"identityName": "21568thoughtsunificator.domodel-diary",
+		"publisher": "CN=693FE515-A1E2-4744-8AFA-F067C5F92608",
+		"publisherDisplayName": "thoughtsunificator",
+		"applicationId": "thoughtsunificator.domodeldiary"
+	},
+	"mac": {
+		"category": "diary"
+	},
+	"win": {
+		"target": ["nsis", "appx", "zip"],
+		"icon": "public/main/icon.ico"
+	},
+	"linux": {
+		"target": [
+			"AppImage",
+			"deb",
+			"snap"
+		]
+	}
+}
