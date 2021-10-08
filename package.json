@@ -5,7 +5,7 @@
 	"main": "src/main/main.js",
 	"scripts": {
 		"start": "concurrently \"rollup --config rollup.config.dev.js\" \"electron .\"",
-		"build": "cross-env NODE_ENV=production rollup --config rollup.config.prod.js && electron-builder build -w",
+		"build": "cross-env NODE_ENV=production rollup --config rollup.config.prod.js && electron-builder build",
 		"test": "mocha"
 	},
 	"license": "MIT",
