@@ -5,7 +5,7 @@
 	"main": "src/main/main.js",
 	"scripts": {
 		"start": "concurrently \"rollup --config rollup.config.dev.js\" \"electron .\"",
-		"build": "cross-env NODE_ENV=production rollup --config rollup.config.prod.js && electron-builder build -lwm",
+		"build": "cross-env NODE_ENV=production rollup --config rollup.config.prod.js && electron-builder build -w",
 		"test": "mocha"
 	},
 	"license": "MIT",
@@ -37,9 +37,7 @@
 		"@domodel/popup": "^1.0.12",
 		"css-generics": "^1.0.2",
 		"domodel": "^1.0.46",
-		"domodel-diary": "latest",
-		"express": "^4.17.1",
-		"serve-static": "^1.14.1"
+		"domodel-diary": "latest"
 	},
 	"repository": {
 		"type": "git",

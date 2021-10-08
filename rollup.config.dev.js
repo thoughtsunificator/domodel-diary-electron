@@ -5,7 +5,6 @@ import copy from "rollup-plugin-copy-watch"
 import { nodeResolve } from "@rollup/plugin-node-resolve"
 import alias from "@rollup/plugin-alias"
 import rootImport from "rollup-plugin-root-import"
-import livereload from "rollup-plugin-livereload"
 
 export default {
 	input: "./src/renderer/renderer.js",
