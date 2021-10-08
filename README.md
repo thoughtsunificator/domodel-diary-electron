@@ -1,5 +1,5 @@
-<div align="left">
-	<img src="public/renderer/icon.png">
+<div align="center">
+	<img width="128" src="public/renderer/icon.png">
 </div>
 
 # domodel-diary-electron
