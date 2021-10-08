@@ -15,18 +15,35 @@
 		"publisherDisplayName": "thoughtsunificator",
 		"applicationId": "thoughtsunificator.domodeldiary"
 	},
-	"mac": {
-		"category": "diary"
-	},
 	"win": {
-		"target": ["nsis", "appx", "zip"],
+		"target": [
+			{
+				"target": "nsis",
+				"arch": ["x64", "ia32"]
+			},
+			{
+				"target": "appx",
+				"arch": ["x64", "ia32"]
+			},
+			{
+				"target": "zip",
+				"arch": ["x64", "ia32"]
+			}
+		],
 		"icon": "public/main/icon.ico"
 	},
 	"linux": {
+		"category": "diary",
+		"icon": "public/renderer/icon.png",
 		"target": [
-			"AppImage",
-			"deb",
-			"snap"
+			{
+				"target": "AppImage",
+				"arch": ["x64", "ia32"]
+			},
+			{
+				"target": "deb",
+				"arch": ["x64", "ia32"]
+			}
 		]
 	}
 }

@@ -1,10 +1,11 @@
 {
 	"name": "domodel-diary-electron",
+	"description": "Electron context for domodel-diary",
 	"version": "1.0.9",
 	"main": "src/main/main.js",
 	"scripts": {
 		"start": "concurrently \"rollup --config rollup.config.dev.js\" \"electron .\"",
-		"build": "cross-env NODE_ENV=production rollup --config rollup.config.prod.js && electron-builder build",
+		"build": "cross-env NODE_ENV=production rollup --config rollup.config.prod.js && electron-builder build -lwm",
 		"test": "mocha"
 	},
 	"license": "MIT",
