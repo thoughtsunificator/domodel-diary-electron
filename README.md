@@ -2,9 +2,9 @@
 	<img src="https://www.electronjs.org/app-img/domodel-diary/domodel-diary-icon-128.png">
 </div>
 
-# domodel-diary-electron ![](https://img.shields.io/github/release-date/thoughtsunificator/domodel-diary-electron)
+# domodel-diary-electron
 
-A small diary application made with [domodel](https://github.com/thoughtsunificator/domodel)
+Electron context for [domodel-diary](https://github.com/thoughtsunificator/domodel-diary)
 
 ![](screenshot-calendar.png)
 
