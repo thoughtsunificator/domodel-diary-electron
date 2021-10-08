@@ -16,7 +16,7 @@ Electron context for [domodel-diary](https://github.com/thoughtsunificator/domod
 
 ### Installing
 
-### Launch it
+### Run
 
 - npm install
 - npm start
@@ -26,4 +26,4 @@ Electron context for [domodel-diary](https://github.com/thoughtsunificator/domod
 - npm install
 - npm run build
 
-The binaries are available in the ``dist/`` folder.
+The binaries are available in the ``dist/main`` folder.
