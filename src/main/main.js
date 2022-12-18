@@ -1,5 +1,5 @@
-const { app, BrowserWindow, ipcMain } = require("electron")
-const path = require("path")
+import { app, BrowserWindow, ipcMain } from "electron"
+import path from "path"
 
 let browserWindow
 
@@ -12,11 +12,7 @@ function createWindow() {
 		icon: path.resolve(__dirname, "../../public/renderer/icon.png")
 	})
 
-	if(app.isPackaged) {
-		browserWindow.loadURL(path.resolve(__dirname, "../../dist/renderer/prod/public/index.html"))
-	} else {
-		browserWindow.loadURL(path.resolve(__dirname, "../../dist/renderer/dev/public/index.html"))
-	}
+	browserWindow.loadURL(path.resolve(__dirname, "../../dist/renderer/public/index.html"))
 
 	browserWindow.on("closed", function () {
 		browserWindow = null
